@@ -1,0 +1,21 @@
+You can narrow Apple issues down to one of three types:
+
+<b>Startup</b>
+Startup issues can be further broken down in to two types:
+
+Before the Apple Logo and spinning gear shows up : Almost always hardware (SMC and PRAM resets can sometimes help.)
+
+After the Apple logo and spinning gear shows up : Almost always software.
+
+
+
+<b>System Wide</b>
+System wide issues occur regardless of what user you're logged in as. If you cannot resolve it with removing plist files in /Library/Preferences and rebooting or through configuration changes a reinstall is generally in order
+(application or system reinstall depending on scope if issue (Ie, for an Outlook issue reinstall Outlook not the whole system.)
+Applications -> Utilities -> Disk Utility -> Repair Disk Permissions can also help in some cases. System wide non-startup issues can also be hardware (ie, my keyboard doesn't work, I only see half my RAM, etc... use discretion.)
+
+
+<b>User Specific</b>
+
+User specific issues only affect one account. Ie, Bob logs in and Outlook crashes, Jim logs in an Outlook opens fine... These are generally caused by configuration / corruption and resolved by removing plist files in
+~/Library/Preferences and rebooting (~ = /Home/<username>.) A reinstall should almost never be necessary. Applications -> Utilities -> Disk Utility -> Repair Disk Permissions can also help in some cases.
