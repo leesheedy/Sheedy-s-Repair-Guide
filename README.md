@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="[https://png.pngtree.com/background/20210711/original/pngtree-blue-minimalistic-tech-computer-banner-poster-background-picture-image_1081883.jpg](https://png.pngtree.com/background/20210711/original/pngtree-blue-minimalistic-tech-computer-banner-poster-background-picture-image_1081883.jpg)" alt="Sheedy's Repair Guide Logo" width="150">
+  <img src="https://png.pngtree.com/background/20210711/original/pngtree-blue-minimalistic-tech-computer-banner-poster-background-picture-image_1081883.jpg" alt="Sheedy's Repair Guide Logo" width="150">
 </p>
 
 # Sheedy's Repair Guide
