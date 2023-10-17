@@ -1,6 +1,6 @@
 Having Wifi Issues after Updating Macos? Try this :
 
-Download the <a href="url">modified files</a> (thanks Alex!) and unzip > you get a folder named WiFi_kexts.
+Download the <a href="https://github.com/leesheedy/Sheedys-Repair-Guide/blob/main/WiFi_kexts.zip" <b>>modified files</a> (thanks Alex!) and unzip > you get a folder named WiFi_kexts.
 Boot into Recovery Mode: restart your computer while pressing and holding cmd+R
 Open Utilities > Terminal via Menu Bar.
 Type csrutil disable and hit return
