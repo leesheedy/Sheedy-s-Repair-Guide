@@ -14,13 +14,7 @@ Welcome to Sheedy's Repair Guide, a list of fixes and tricks i've learnt overtim
 - [Introduction](#introduction)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 
-## Introduction
-
-![Illustration](https://your-image-url.com/introduction_image.jpg)
-
-The Sheedy's Repair Guide is a continuously evolving, curated repository of repair knowledge for enthusiasts, hobbyists, and professionals. Whether you're fixing electronics, appliances, vehicles, or anything else, our guide is here to make your repair journey smoother.
 
 ## Features
 
