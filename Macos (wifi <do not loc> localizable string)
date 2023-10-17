@@ -1,0 +1,16 @@
+Having Wifi Issues after Updating Macos? Try this :
+
+Download the <a href="url">modified files</a> (thanks Alex!) and unzip > you get a folder named WiFi_kexts.
+Boot into Recovery Mode: restart your computer while pressing and holding cmd+R
+Open Utilities > Terminal via Menu Bar.
+Type csrutil disable and hit return
+Type reboot and hit return > computer reboots normally
+Open Utilities > Terminal and enter cd and hit the space bar (don't hit return)
+Drag the folder WiFi_kexts onto the Terminal window and hit return.
+In Terminal, enter sudo mount -uw / and hit return, then enter your user password and hit return.
+Enter sudo cp -r IO80211Family.kext /System/Library/Extensions/ and hit return
+Enter sudo cp -r IO80211FamilyV2.kext /System/Library/Extensions/ and hit return
+Right-click on Kext Utility in the folder WiFi_kexts and choose open, click open in the following dialog, authenticate with your password
+Wait for Kext Utility to complete – this took maybe two minutes on my setup, and I got an error message in the end, as well as "All done"
+Reboot your computer and enjoy Wi-Fi in Catalina If you want to turn on SIP again you can boot into recovery mode again and enter csrutil enable (hit return) reboot (hit return)
+In summary I had to get the Wi-Fi kexts from Mojave, copy it to /System/Library/Extensions and then run the Kext Utility to do its thing after which I had my Wi-Fi back.
