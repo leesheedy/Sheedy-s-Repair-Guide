@@ -1,0 +1,38 @@
+
+If no administrator accounts exist on your Mac, an exploit exists in macOS that permits you to re-run Setup Assistant and create a new administrator account. This administrator account can be used to resolve the issue and restore administrator privileges to your real account. To perform this exploit:
+
+
+
+Verify that you are not in one of the scenarios listed below:
+A firmware password is set on your Mac. You'll need to disable (turn off) the firmware password first.
+FileVault is ON, you don't know the password to any FileVault-authorized user accounts, and one of the following scenarios apply:
+You set an Apple ID to unlock your startup disk. Follow these instructions to reset the user account password for the user that set up FileVault.
+You set a local recovery key, and don't have the recovery key.
+Hold down Command-S as you turn on or restart your Mac. This will boot your Mac into Single User Mode. Release the keys when white text appears on a black screen.
+If FileVault is on, the login window should immediately appear. Log in as any user to continue.
+
+
+ 
+If you only have the recovery key, select any user and enter the password incorrectly three times. Then, choose to use the recovery key. Enter it exactly as recorded, including capitalization.
+
+When the white text stops moving, enter these commands in order, very carefully:
+mount -uw /
+rm /var/db/.AppleSetupDone
+reboot
+Your Mac should restart immediately after the reboot command. (If FileVault is on, log in to continue or use the recovery key.) Setup Assistant should soon appear.
+Progress through the Assistant until you're prompted to transfer data. Choose not to; this will permit you to create a new administrator account on the next screen. Use a generic or random name to help distinguish this temporary account from your real account.
+When Setup Assistant is complete, you'll be logged into the new (temporary) administrator account.
+Reverse the name change on your real account that you made earlier, then follow the steps in this article to correctly change your account name: Change the name of your macOS user account and home folder - Apple Support
+
+
+To restore administrator privileges to your real account:
+
+Log out of your real account, and log into an administrator account.
+Open Users and Groups preferences, then click the padlock and authenticate with administrator credentials.
+Select your real user account and check the box next to "Allow user to administer this computer".
+Restart your Mac.
+Log into your real account, and go to Users and Groups preferences. Click on the padlock and authenticate with your own credentials.
+If desired, delete the temporary administrator account.
+
+
+Hope this helps!
